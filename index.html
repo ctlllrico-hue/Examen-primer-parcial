@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini pagina de tarea HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="portada">
+        <p class="etiqueta-superior">Tarea de programacion</p>
+        <h1>Mini pagina de tarea</h1>
+        <p>20 etiquetas de HTML y 20 propiedades de CSS, explicadas con comentarios, sintaxis y ejemplos en vivo.</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#html">Etiquetas HTML</a>
+        <a href="#css">Propiedades CSS</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <section id="html">
+
+            <div class="titulo-seccion">
+                <span>PARTE 1</span>
+                <h2>20 etiquetas de HTML</h2>
+            </div>
+
+            <!-- ETIQUETA HTML 1: h1 es el titulo principal de una pagina -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">1</span>
+                    <code>&lt;h1&gt;</code> Titulo principal
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    senala el titulo mas importante de la pagina.
+                </p>
+
+                <pre><code>&lt;h1&gt;Titulo principal&lt;/h1&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <h1 class="demo-h1">Titulo principal</h1>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 2: h2 crea un subtitulo -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">2</span>
+                    <code>&lt;h2&gt;</code> Subtitulo
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    divide el contenido en secciones.
+                </p>
+
+                <pre><code>&lt;h2&gt;Subtitulo de seccion&lt;/h2&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <h2 class="demo-h2">Subtitulo de seccion</h2>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 3: p crea un parrafo -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">3</span>
+                    <code>&lt;p&gt;</code> Parrafo
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    organiza un bloque de texto en forma de parrafo.
+                </p>
+
+                <pre><code>&lt;p&gt;Este es un parrafo.&lt;/p&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <p>Este es un parrafo de ejemplo.</p>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 4: strong marca texto importante -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">4</span>
+                    <code>&lt;strong&gt;</code> Texto importante
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    indica que una palabra o frase tiene importancia.
+                </p>
+
+                <pre><code>&lt;strong&gt;Texto importante&lt;/strong&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <strong>Texto importante</strong>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 5: em da enfasis al texto -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">5</span>
+                    <code>&lt;em&gt;</code> Enfasis
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    resalta una palabra y normalmente aparece en cursiva.
+                </p>
+
+                <pre><code>&lt;em&gt;Texto con enfasis&lt;/em&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <em>Texto con enfasis</em>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 6: mark resalta informacion -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">6</span>
+                    <code>&lt;mark&gt;</code> Texto resaltado
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    destaca informacion como si tuviera un marcador.
+                </p>
+
+                <pre><code>&lt;mark&gt;Dato importante&lt;/mark&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <mark>Dato importante</mark>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 7: a crea enlaces -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">7</span>
+                    <code>&lt;a&gt;</code> Enlace
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    permite ir a otra pagina o seccion.
+                </p>
+
+                <pre><code>&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <a href="https://www.google.com" target="_blank">
+                        Ir a Google
+                    </a>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 8: div agrupa elementos -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">8</span>
+                    <code>&lt;div&gt;</code> Contenedor
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    agrupa elementos para ordenarlos o aplicarles estilos.
+                </p>
+
+                <pre><code>&lt;div&gt;Contenido agrupado&lt;/div&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <div class="caja-demo">Contenido agrupado</div>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 9: span selecciona una parte del texto -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">9</span>
+                    <code>&lt;span&gt;</code> Fragmento de texto
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    selecciona palabras para aplicarles un estilo.
+                </p>
+
+                <pre><code>&lt;p&gt;Texto &lt;span&gt;especial&lt;/span&gt;.&lt;/p&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <p>
+                        Este texto tiene una palabra
+                        <span class="palabra-demo">especial</span>.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 10: br crea un salto de linea -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">10</span>
+                    <code>&lt;br&gt;</code> Salto de linea
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    hace que el contenido continue en la siguiente linea.
+                </p>
+
+                <pre><code>Primera linea&lt;br&gt;Segunda linea</code></pre>
+
+                <div class="ejemplo">
+                    Primera linea<br>
+                    Segunda linea
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 11: hr crea una separacion -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">11</span>
+                    <code>&lt;hr&gt;</code> Separador
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    representa un cambio de tema con una linea horizontal.
+                </p>
+
+                <pre><code>&lt;hr&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <hr>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 12: ul crea una lista sin orden -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">12</span>
+                    <code>&lt;ul&gt;</code> Lista sin orden
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    crea una lista con vinetas.
+                </p>
+
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 13: ol crea una lista ordenada -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">13</span>
+                    <code>&lt;ol&gt;</code> Lista ordenada
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    organiza elementos utilizando numeros.
+                </p>
+
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;Abrir Visual Studio Code&lt;/li&gt;
+    &lt;li&gt;Crear index.html&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <ol>
+                        <li>Abrir Visual Studio Code</li>
+                        <li>Crear index.html</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 14: li crea un elemento de una lista -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">14</span>
+                    <code>&lt;li&gt;</code> Elemento de lista
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    crea cada elemento dentro de una lista.
+                </p>
+
+                <pre><code>&lt;li&gt;Elemento de la lista&lt;/li&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <ul>
+                        <li>Elemento de la lista</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 15: table crea una tabla -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">15</span>
+                    <code>&lt;table&gt;</code> Tabla
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    organiza datos mediante filas y columnas.
+                </p>
+
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Lenguaje&lt;/th&gt;
+        &lt;th&gt;Funcion&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;HTML&lt;/td&gt;
+        &lt;td&gt;Estructura&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <table>
+                        <tr>
+                            <th>Lenguaje</th>
+                            <th>Funcion</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 16: form crea un formulario -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">16</span>
+                    <code>&lt;form&gt;</code> Formulario
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    agrupa campos para solicitar informacion.
+                </p>
+
+                <pre><code>&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input id="nombre" type="text"&gt;
+&lt;/form&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <form class="form-demo">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text">
+                    </form>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 17: label describe un campo -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">17</span>
+                    <code>&lt;label&gt;</code> Etiqueta de campo
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    explica que informacion debe escribirse.
+                </p>
+
+                <pre><code>&lt;label for="correo"&gt;Correo:&lt;/label&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <label for="correo">Correo:</label>
+                    <input id="correo" type="email">
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 18: input crea un campo -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">18</span>
+                    <code>&lt;input&gt;</code> Campo de entrada
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    permite escribir o seleccionar informacion.
+                </p>
+
+                <pre><code>&lt;input type="text" placeholder="Escribe tu nombre"&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <input type="text" placeholder="Escribe tu nombre">
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 19: button crea un boton -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">19</span>
+                    <code>&lt;button&gt;</code> Boton
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    crea un boton que puede ejecutar una accion.
+                </p>
+
+                <pre><code>&lt;button type="button"&gt;Aceptar&lt;/button&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <button type="button">Aceptar</button>
+                </div>
+            </article>
+
+            <!-- ETIQUETA HTML 20: footer crea el pie de pagina -->
+            <article class="ficha">
+                <h3>
+                    <span class="numero">20</span>
+                    <code>&lt;footer&gt;</code> Pie de pagina
+                </h3>
+
+                <p>
+                    <strong>Para que sirve:</strong>
+                    contiene informacion final como autor o fecha.
+                </p>
+
+                <pre><code>&lt;footer&gt;Tarea de programacion 2026&lt;/footer&gt;</code></pre>
+
+                <div class="ejemplo">
+                    <footer class="footer-demo">
+                        Tarea de programacion 2026
+                    </footer>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="css">
+
+            <div class="titulo-seccion oscuro">
+                <span>PARTE 2</span>
+                <h2>20 propiedades de CSS</h2>
+            </div>
+
+            <div class="sintaxis">
+                <h3>Sintaxis general de CSS</h3>
+
+                <pre><code>selector {
+    propiedad: valor;
+}</code></pre>
+
+                <p>
+                    El selector indica que elemento se modificara,
+                    la propiedad indica que aspecto cambiara
+                    y el valor define el resultado.
+                </p>
+            </div>
+
+            <div class="rejilla-css">
+
+                <article class="propiedad">
+                    <h3><span class="numero">1</span><code>color</code></h3>
+                    <p>Cambia el color del texto.</p>
+                    <pre><code>color: #156b4a;</code></pre>
+                    <div class="muestra css-color">Texto verde</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">2</span><code>background-color</code></h3>
+                    <p>Cambia el color del fondo.</p>
+                    <pre><code>background-color: #dff3e8;</code></pre>
+                    <div class="muestra css-fondo">Fondo de color</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">3</span><code>font-size</code></h3>
+                    <p>Define el tamano de la letra.</p>
+                    <pre><code>font-size: 24px;</code></pre>
+                    <div class="muestra css-tamano">Texto grande</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">4</span><code>font-family</code></h3>
+                    <p>Selecciona el tipo de letra.</p>
+                    <pre><code>font-family: Georgia, serif;</code></pre>
+                    <div class="muestra css-fuente">Otra tipografia</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">5</span><code>font-weight</code></h3>
+                    <p>Controla el grosor de las letras.</p>
+                    <pre><code>font-weight: bold;</code></pre>
+                    <div class="muestra css-grosor">Texto grueso</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">6</span><code>text-align</code></h3>
+                    <p>Alinea el texto horizontalmente.</p>
+                    <pre><code>text-align: center;</code></pre>
+                    <div class="muestra css-alinear">Texto centrado</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">7</span><code>line-height</code></h3>
+                    <p>Modifica el espacio entre lineas.</p>
+                    <pre><code>line-height: 2;</code></pre>
+                    <div class="muestra css-interlineado">
+                        Linea numero uno.<br>
+                        Linea numero dos.
+                    </div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">8</span><code>margin</code></h3>
+                    <p>Crea espacio por fuera del elemento.</p>
+                    <pre><code>margin: 20px;</code></pre>
+                    <div class="marco">
+                        <div class="muestra css-margin">Margen exterior</div>
+                    </div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">9</span><code>padding</code></h3>
+                    <p>Crea espacio entre el contenido y el borde.</p>
+                    <pre><code>padding: 20px;</code></pre>
+                    <div class="muestra css-padding">Espacio interior</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">10</span><code>border</code></h3>
+                    <p>Agrega un borde al elemento.</p>
+                    <pre><code>border: 2px solid #156b4a;</code></pre>
+                    <div class="muestra css-borde">Elemento con borde</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">11</span><code>border-radius</code></h3>
+                    <p>Redondea las esquinas.</p>
+                    <pre><code>border-radius: 18px;</code></pre>
+                    <div class="muestra css-redondear">Esquinas redondas</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">12</span><code>width</code></h3>
+                    <p>Define el ancho de un elemento.</p>
+                    <pre><code>width: 60%;</code></pre>
+                    <div class="muestra css-ancho">60% de ancho</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">13</span><code>height</code></h3>
+                    <p>Define la altura de un elemento.</p>
+                    <pre><code>height: 80px;</code></pre>
+                    <div class="muestra css-alto">80px de alto</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">14</span><code>display</code></h3>
+                    <p>Determina como se acomoda un elemento.</p>
+                    <pre><code>display: flex;</code></pre>
+                    <div class="muestra css-display">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                    </div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">15</span><code>gap</code></h3>
+                    <p>Agrega separacion entre elementos.</p>
+                    <pre><code>gap: 18px;</code></pre>
+                    <div class="muestra css-gap">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">16</span><code>box-shadow</code></h3>
+                    <p>Agrega una sombra alrededor.</p>
+                    <pre><code>box-shadow: 0 5px 14px #aaa;</code></pre>
+                    <div class="muestra css-sombra">Elemento con sombra</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">17</span><code>opacity</code></h3>
+                    <p>Controla la transparencia.</p>
+                    <pre><code>opacity: 0.5;</code></pre>
+                    <div class="muestra css-opacidad">50% de opacidad</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">18</span><code>text-transform</code></h3>
+                    <p>Cambia el uso de mayusculas y minusculas.</p>
+                    <pre><code>text-transform: uppercase;</code></pre>
+                    <div class="muestra css-mayusculas">Texto en mayusculas</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">19</span><code>letter-spacing</code></h3>
+                    <p>Modifica el espacio entre letras.</p>
+                    <pre><code>letter-spacing: 5px;</code></pre>
+                    <div class="muestra css-letras">ESPACIO</div>
+                </article>
+
+                <article class="propiedad">
+                    <h3><span class="numero">20</span><code>cursor</code></h3>
+                    <p>Cambia la apariencia del puntero.</p>
+                    <pre><code>cursor: pointer;</code></pre>
+                    <div class="muestra css-cursor">
+                        Coloca el cursor aqui
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-principal">
+        <p>Mini pagina de tarea - HTML y CSS - 2026</p>
+    </footer>
+
+</body>
+</html>

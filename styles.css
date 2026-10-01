@@ -1,0 +1,400 @@
+:root {
+    --morado: #7b4da3;
+    --morado-oscuro: #3c2059;
+    --morado-claro: #eee3f6;
+    --crema: #f8f5fa;
+    --tinta: #30243a;
+    --borde: #d9cbe5;
+    --codigo: #251532;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--crema);
+    color: var(--tinta);
+    line-height: 1.6;
+}
+
+.portada {
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        var(--morado-oscuro),
+        #9a6bc1
+    );
+    border-bottom: 5px solid #c4a3dc;
+}
+
+.portada h1 {
+    margin: 5px 0 10px;
+    font-size: clamp(32px, 6vw, 58px);
+}
+
+.portada p {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.etiqueta-superior {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 13px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(60, 32, 89, 0.12);
+}
+
+.menu a {
+    color: var(--morado-oscuro);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--morado);
+}
+
+.contenedor {
+    width: min(1080px, 92%);
+    margin: 34px auto;
+}
+
+.titulo-seccion {
+    margin: 45px 0 22px;
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: var(--morado);
+    border-radius: 10px;
+}
+
+.titulo-seccion.oscuro {
+    color: white;
+    background: var(--morado-oscuro);
+    border: 2px solid #9a6bc1;
+}
+
+.titulo-seccion span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    margin: 2px 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.ficha,
+.propiedad,
+.sintaxis {
+    margin-bottom: 20px;
+    padding: 24px;
+    background: white;
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(60, 32, 89, 0.09);
+}
+
+.ficha h3,
+.propiedad h3 {
+    margin-top: 0;
+}
+
+.numero {
+    display: inline-grid;
+    place-items: center;
+    width: 31px;
+    height: 31px;
+    margin-right: 8px;
+    border-radius: 50%;
+    color: white;
+    background: var(--morado);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+code {
+    padding: 2px 6px;
+    color: #583276;
+    background: var(--morado-claro);
+    border-radius: 5px;
+    font-family: Consolas, Monaco, monospace;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 18px;
+    color: #f4f8ff;
+    background: var(--codigo);
+    border-radius: 9px;
+}
+
+pre code {
+    padding: 0;
+    color: inherit;
+    background: transparent;
+}
+
+.ejemplo,
+.muestra {
+    margin-top: 13px;
+    padding: 16px;
+    background: #fbf9fc;
+    border-left: 4px solid var(--morado);
+    border-radius: 5px;
+}
+
+.ejemplo::before {
+    content: "Ejemplo en vivo";
+    display: block;
+    margin-bottom: 9px;
+    color: #735d82;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.demo-h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.demo-h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.caja-demo {
+    padding: 12px;
+    background: var(--morado-claro);
+    border: 1px solid #cdb5df;
+}
+
+.palabra-demo {
+    color: var(--morado-oscuro);
+    font-weight: bold;
+}
+
+.ejemplo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ejemplo th,
+.ejemplo td {
+    padding: 8px;
+    border: 1px solid #cbbbd7;
+    text-align: left;
+}
+
+.form-demo {
+    display: grid;
+    gap: 7px;
+    max-width: 380px;
+}
+
+input {
+    max-width: 100%;
+    padding: 9px;
+    border: 1px solid #bba4cc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    color: white;
+    background: var(--morado);
+    border: 1px solid var(--morado-oscuro);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.footer-demo {
+    padding: 12px;
+    color: white;
+    background: var(--morado-oscuro);
+    text-align: center;
+}
+
+.sintaxis h3 {
+    margin-top: 0;
+}
+
+.rejilla-css {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.propiedad {
+    margin: 0;
+}
+
+.propiedad p {
+    min-height: 52px;
+}
+
+.marco {
+    overflow: hidden;
+    background: repeating-linear-gradient(
+        45deg,
+        #eeeeee,
+        #eeeeee 8px,
+        #fafafa 8px,
+        #fafafa 16px
+    );
+}
+
+/* 1. color cambia el color del texto */
+.css-color {
+    color: #6c3f91;
+}
+
+/* 2. background-color cambia el color del fondo */
+.css-fondo {
+    background-color: #eee3f6;
+}
+
+/* 3. font-size define el tamano de la letra */
+.css-tamano {
+    font-size: 24px;
+}
+
+/* 4. font-family selecciona la tipografia */
+.css-fuente {
+    font-family: Georgia, serif;
+}
+
+/* 5. font-weight controla el grosor del texto */
+.css-grosor {
+    font-weight: bold;
+}
+
+/* 6. text-align alinea el texto */
+.css-alinear {
+    text-align: center;
+}
+
+/* 7. line-height define el espacio entre lineas */
+.css-interlineado {
+    line-height: 2;
+}
+
+/* 8. margin crea espacio exterior */
+.css-margin {
+    margin: 20px;
+}
+
+/* 9. padding crea espacio interior */
+.css-padding {
+    padding: 20px;
+}
+
+/* 10. border agrega un borde */
+.css-borde {
+    border: 2px solid #7b4da3;
+}
+
+/* 11. border-radius redondea las esquinas */
+.css-redondear {
+    border-radius: 18px;
+}
+
+/* 12. width define el ancho */
+.css-ancho {
+    width: 60%;
+}
+
+/* 13. height define la altura */
+.css-alto {
+    height: 80px;
+}
+
+/* 14. display controla el tipo de acomodo */
+.css-display {
+    display: flex;
+}
+
+.css-display span,
+.css-gap span {
+    padding: 6px 12px;
+    color: white;
+    background: var(--morado);
+}
+
+/* 15. gap crea espacio entre elementos */
+.css-gap {
+    display: flex;
+    gap: 18px;
+}
+
+/* 16. box-shadow agrega una sombra */
+.css-sombra {
+    box-shadow: 0 5px 14px #aaaaaa;
+}
+
+/* 17. opacity controla la transparencia */
+.css-opacidad {
+    opacity: 0.5;
+}
+
+/* 18. text-transform cambia mayusculas o minusculas */
+.css-mayusculas {
+    text-transform: uppercase;
+}
+
+/* 19. letter-spacing ajusta el espacio entre letras */
+.css-letras {
+    letter-spacing: 5px;
+}
+
+/* 20. cursor cambia la apariencia del puntero */
+.css-cursor {
+    cursor: pointer;
+}
+
+.pie-principal {
+    margin-top: 50px;
+    padding: 28px 20px;
+    color: white;
+    background: var(--morado-oscuro);
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .rejilla-css {
+        grid-template-columns: 1fr;
+    }
+
+    .propiedad p {
+        min-height: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}
